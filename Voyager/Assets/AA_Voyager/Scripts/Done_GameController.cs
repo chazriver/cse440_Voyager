@@ -11,14 +11,18 @@ public class Done_GameController : MonoBehaviour
     public float spawnWait;
     public float startWait;
     public float waveWait;
+    public double timeOver;
 
     public Text scoreText;
     public Text restartText;
     public Text gameOverText;
+    public Text timeOverText;
+
 
     private bool gameOver;
     private bool restart;
     private int score;
+    private bool compleatedLevel;
 
     void Start()
     {
@@ -40,6 +44,22 @@ public class Done_GameController : MonoBehaviour
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
         }
+        if (compleatedLevel)
+        {
+          if (Input.anyKeyDown)//It will not return true until the user has released all keys / buttons and pressed any key / buttons again.
+          {
+          SceneManager.LoadScene((SceneManager.GetActiveScene().buildIndex) + 1);
+          }
+        }
+
+        if (timeOver <= 0)//level Compleated time expired
+        {
+          gameOverText.text = "Level Compleated!";
+          compleatedLevel = true;
+        }
+
+        timeOver = timeOver - 0.01666666667;// if 60 FPS this minus the correct values
+
     }
 
     IEnumerator SpawnWaves()
@@ -47,6 +67,7 @@ public class Done_GameController : MonoBehaviour
         yield return new WaitForSeconds(startWait);
         while (true)
         {
+
             for (int i = 0; i < hazardCount; i++)
             {
                 GameObject hazard = hazards[Random.Range(0, hazards.Length)];
@@ -63,6 +84,7 @@ public class Done_GameController : MonoBehaviour
                 restart = true;
                 break;
             }
+
         }
     }
 
