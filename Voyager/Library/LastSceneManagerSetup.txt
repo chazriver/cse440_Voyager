@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/AA_Voyager/Scenes/Done_Main.unity
+- path: Assets/AA_Voyager/Scenes/Main_menu.unity
   isLoaded: 1
   isActive: 1

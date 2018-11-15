@@ -11,17 +11,18 @@ public class Done_GameController : MonoBehaviour
     public float spawnWait;
     public float startWait;
     public float waveWait;
-    public double timeOver;
+    public double timeOver;//used to calc percent of Pb bar.
+    private double timeOverUpdate;//used to update the time in script
+
 
     public Text scoreText;
     public Text restartText;
     public Text gameOverText;
     public Text timeOverText;
 
-
     private bool gameOver;
     private bool restart;
-    private int score;
+    private static int score;
     private bool compleatedLevel;
 
     void Start()
@@ -31,6 +32,7 @@ public class Done_GameController : MonoBehaviour
         restartText.text = "";
         gameOverText.text = "";
         score = 0;
+        timeOverUpdate = timeOver;
         UpdateScore();
         StartCoroutine(SpawnWaves());
     }
@@ -42,6 +44,7 @@ public class Done_GameController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.R))
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
             }
         }
         if (compleatedLevel)
@@ -49,16 +52,20 @@ public class Done_GameController : MonoBehaviour
           if (Input.anyKeyDown)//It will not return true until the user has released all keys / buttons and pressed any key / buttons again.
           {
           SceneManager.LoadScene((SceneManager.GetActiveScene().buildIndex) + 1);
+
           }
         }
 
-        if (timeOver <= 0)//level Compleated time expired
+        if (timeOverUpdate <= 0)//level Compleated time expired
         {
           gameOverText.text = "Level Compleated!";
           compleatedLevel = true;
         }
 
-        timeOver = timeOver - 0.01666666667;// if 60 FPS this minus the correct values
+        timeOverUpdate = timeOverUpdate - 0.01666666667;//Countdown time
+        AddScore(1);//add score
+        float TotalTimeOver = (float)timeOver;
+        GameObject.Find("UI_ProgressBar").GetComponent<ProgressBar>().BarValue += 0.01666666667f * TotalTimeOver;//update Pb bar
 
     }
 

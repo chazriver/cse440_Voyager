@@ -64,6 +64,7 @@
      <Compile Include="Assets\AA_Voyager\Scripts\Done_PowerByContact.cs" />
      <Compile Include="Assets\AA_Voyager\Scripts\Done_RandomRotator.cs" />
      <Compile Include="Assets\AA_Voyager\Scripts\Done_WeaponController.cs" />
+     <Compile Include="Assets\FollowPlayer.cs" />
      <Compile Include="Assets\Main menu with parallax FREE\Scripts\ActivateParallax.cs" />
      <Compile Include="Assets\Main menu with parallax FREE\Scripts\Arrow.cs" />
      <Compile Include="Assets\Main menu with parallax FREE\Scripts\MenuController.cs" />
@@ -90,6 +91,9 @@
      <Compile Include="Assets\Misc\SampleScenes\Scripts\NetworkSpaceshipBullet.cs" />
      <Compile Include="Assets\Misc\TutorialInfo\Scripts\Readme.cs" />
      <Compile Include="Assets\NeonShapes\SelfDestroyScript.cs" />
+     <Compile Include="Assets\ProgressBar\Scene\Demo.cs" />
+     <Compile Include="Assets\ProgressBar\Script\ProgressBar.cs" />
+     <Compile Include="Assets\ProgressBar\Script\ProgressBarCircle.cs" />
      <None Include="Assets\Misc\Lobby\Documentation.txt" />
      <None Include="Assets\Misc\Lobby\Instruction.txt" />
      <None Include="Assets\Space Shooter\Info.txt" />
