@@ -94,10 +94,14 @@
      <Compile Include="Assets\ProgressBar\Scene\Demo.cs" />
      <Compile Include="Assets\ProgressBar\Script\ProgressBar.cs" />
      <Compile Include="Assets\ProgressBar\Script\ProgressBarCircle.cs" />
+     <None Include="Assets\HighScore\SpriteSheets\HighScore2.txt" />
+     <None Include="Assets\HighScore\SpriteSheets\HighScore3.txt" />
      <None Include="Assets\Misc\Lobby\Documentation.txt" />
      <None Include="Assets\Misc\Lobby\Instruction.txt" />
      <None Include="Assets\Space Shooter\Info.txt" />
      <None Include="Assets\Misc\Fonts\OpenSans\License!.txt" />
+     <None Include="Assets\HighScore\SpriteSheets\HighScore4.txt" />
+     <None Include="Assets\HighScore\SpriteSheets\HighScore1.txt" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>/Users/chazhampton/Desktop/Unity_Labs/Labs/cse440_voyager/Voyager/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>

@@ -13,7 +13,7 @@ public class Done_GameController : MonoBehaviour
     public float waveWait;
     public double timeOver;//used to calc percent of Pb bar.
     private double timeOverUpdate;//used to update the time in script
-
+    public GameObject HighScore;
 
     public Text scoreText;
     public Text restartText;
@@ -35,6 +35,9 @@ public class Done_GameController : MonoBehaviour
         timeOverUpdate = timeOver;
         UpdateScore();
         StartCoroutine(SpawnWaves());
+
+        HighScore.SetActive(false);
+
     }
 
     void Update()
@@ -51,6 +54,7 @@ public class Done_GameController : MonoBehaviour
         {
           if (Input.anyKeyDown)//It will not return true until the user has released all keys / buttons and pressed any key / buttons again.
           {
+
           SceneManager.LoadScene((SceneManager.GetActiveScene().buildIndex) + 1);
 
           }
@@ -58,6 +62,9 @@ public class Done_GameController : MonoBehaviour
 
         if (timeOverUpdate <= 0)//level Compleated time expired
         {
+          
+          HighScore.SetActive(true);
+
           gameOverText.text = "Level Compleated!";
           compleatedLevel = true;
         }
