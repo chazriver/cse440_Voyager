@@ -20,10 +20,12 @@ public class CollisionDamage : MonoBehaviour
             if(collision.gameObject.GetComponent<Shields>().HasShield == true)
             {
                 collision.gameObject.GetComponent<Shields>().TakeDamage(damageUponHit);
+                AudioManager.instance.Play("asteroidCollision", gameObject);
             }
             else if(collision.gameObject.GetComponent<Shields>().HasShield == false)
             {
                 collision.gameObject.GetComponent<Health>().TakeDamage(damageUponHit);
+                AudioManager.instance.Play("asteroidCollision", gameObject);
             }
             // If this object is also an asteroid, change rotation
             if (gameObject.tag == "Asteroid") gameObject.transform.localEulerAngles = new Vector3(0, Random.Range(-180f, 180f), 0);

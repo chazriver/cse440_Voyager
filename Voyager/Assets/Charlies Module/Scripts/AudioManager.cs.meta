@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 85d4746277e52c740afb48940ec18ca2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - soundObjectPrefab: {instanceID: 0}
+  - clipOne: {fileID: 8300000, guid: 0bf9da9949453ff46bf05b63f1395b91, type: 3}
+  - clipTwo: {instanceID: 0}
+  - clipThree: {instanceID: 0}
+  - clipFour: {instanceID: 0}
+  - clipFive: {instanceID: 0}
+  - clipSix: {instanceID: 0}
+  - groupOne: {instanceID: 0}
+  - groupTwo: {instanceID: 0}
+  - snapshotOne: {instanceID: 0}
+  - snapshotTwo: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

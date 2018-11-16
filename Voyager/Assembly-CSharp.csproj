@@ -69,8 +69,10 @@
     <Compile Include="Assets\AA_Voyager\Scripts\Done_GameController.cs" />
     <Compile Include="Assets\AA_Voyager\Scripts\Done_Mover.cs" />
     <Compile Include="Assets\AA_Voyager\Scripts\Done_PlayerController.cs" />
+    <Compile Include="Assets\AA_Voyager\Scripts\Done_PowerByContact.cs" />
     <Compile Include="Assets\AA_Voyager\Scripts\Done_RandomRotator.cs" />
     <Compile Include="Assets\AA_Voyager\Scripts\Done_WeaponController.cs" />
+    <Compile Include="Assets\Charlies Module\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Charlies Module\Scripts\AxisAngleRotation.cs" />
     <Compile Include="Assets\Charlies Module\Scripts\CollisionDamage.cs" />
     <Compile Include="Assets\Charlies Module\Scripts\CollisionTest.cs" />
@@ -87,6 +89,13 @@
     <Compile Include="Assets\Charlies Module\Scripts\Shields.cs" />
     <Compile Include="Assets\Charlies Module\Scripts\Spawner.cs" />
     <Compile Include="Assets\Charlies Module\Scripts\Weapon.cs" />
+    <Compile Include="Assets\Main menu with parallax FREE\Scripts\ActivateParallax.cs" />
+    <Compile Include="Assets\Main menu with parallax FREE\Scripts\Arrow.cs" />
+    <Compile Include="Assets\Main menu with parallax FREE\Scripts\MenuController.cs" />
+    <Compile Include="Assets\Main menu with parallax FREE\Scripts\Parallax.cs" />
+    <Compile Include="Assets\Main menu with parallax FREE\Scripts\SceneController.cs" />
+    <Compile Include="Assets\Main menu with parallax FREE\Scripts\Settings.cs" />
+    <Compile Include="Assets\Main menu with parallax FREE\Scripts\SettingsController.cs" />
     <Compile Include="Assets\Misc\Lobby\Scripts\DraggablePanel.cs" />
     <Compile Include="Assets\Misc\Lobby\Scripts\EventSystemChecker.cs" />
     <Compile Include="Assets\Misc\Lobby\Scripts\Lobby\LobbyCountdownPanel.cs" />
@@ -105,6 +114,7 @@
     <Compile Include="Assets\Misc\SampleScenes\Scripts\NetworkSpaceship.cs" />
     <Compile Include="Assets\Misc\SampleScenes\Scripts\NetworkSpaceshipBullet.cs" />
     <Compile Include="Assets\Misc\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\NeonShapes\SelfDestroyScript.cs" />
     <None Include="Assets\Misc\Lobby\Documentation.txt" />
     <None Include="Assets\Misc\Lobby\Instruction.txt" />
     <None Include="Assets\Space Shooter\Info.txt" />

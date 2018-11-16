@@ -61,6 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Main menu with parallax FREE\Editor\MenuEditor.cs" />
     <Compile Include="Assets\Misc\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/ozmo/Documents/GitHub/cse440_Voyager/Voyager/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
